@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+.venv/
+env/
+.env
+*.egg-info/
+dist/
+build/
+*.spec.bak
+
+# V-Guard data
+data/vguard.db
+data/downloads/*
+!data/downloads/.gitkeep
+data/thesis/figures/*
+!data/thesis/figures/.gitkeep
+
+# Analysis temp files
+*.wav
+data/temp_audio/
+temp_audio/
+temp_frames/
+models/vosk/*.zip
+models/vosk/vosk-model*/
+data/_explicit_audio_cache/
+data/_zip_probe/
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+.pytest_cache/
+
+# PyInstaller
+*.spec.log
+
+# Models (large files — document download separately)
+models/visual_model/*.onnx
+models/visual_model/*.pb
+
+# Portable FFmpeg (install: python scripts/install_ffmpeg.py)
+tools/ffmpeg/bin/
+tools/ffmpeg/*.zip
+tools/ffmpeg/_extract/

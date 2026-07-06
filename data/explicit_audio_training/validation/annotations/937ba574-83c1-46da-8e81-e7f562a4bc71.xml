@@ -1,0 +1,26 @@
+<annotation>
+  <folder>images</folder>
+  <filename>937ba574-83c1-46da-8e81-e7f562a4bc71.png</filename>
+  <path>images/937ba574-83c1-46da-8e81-e7f562a4bc71.png</path>
+  <source>
+    <database>Unknown</database>
+  </source>
+  <size>
+    <width>13431</width>
+    <height>128</height>
+    <depth>3</depth>
+  </size>
+  <segmented>0</segmented>
+  <object>
+    <name>Moan</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>12609</xmin>
+      <ymin>0</ymin>
+      <xmax>12644</xmax>
+      <ymax>128</ymax>
+    </bndbox>
+  </object>
+</annotation>
