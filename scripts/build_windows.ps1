@@ -1,7 +1,7 @@
 # Build V-Guard Windows distribution (PyInstaller onedir)
 # Requires: pip install pyinstaller  (in requirements.txt)
 
-$ErrorActionPreference = "Stop"
+$ErrorActionPreference = "Continue"
 $Root = Split-Path -Parent $PSScriptRoot
 Set-Location $Root
 

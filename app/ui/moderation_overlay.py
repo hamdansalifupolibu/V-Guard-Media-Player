@@ -14,6 +14,7 @@ from app.config import (
     MODERATION_SHIELD_BLUR_SIGMA,
     MODERATION_SHIELD_CAPTURE_HEIGHT,
     MODERATION_SHIELD_CAPTURE_WIDTH,
+    MODERATION_SHIELD_DOWNSAMPLE_FACTOR,
     MODERATION_SHIELD_FPS,
     MODERATION_SHIELD_FROST_ALPHA,
 )
@@ -128,9 +129,10 @@ def _blur_png_bytes(data: bytes) -> QPixmap:
         frame, (0, 0), sigmaX=MODERATION_SHIELD_BLUR_SIGMA, sigmaY=MODERATION_SHIELD_BLUR_SIGMA
     )
     bh, bw = blurred.shape[:2]
+    factor = MODERATION_SHIELD_DOWNSAMPLE_FACTOR
     tiny = cv2.resize(
         blurred,
-        (max(1, bw // 5), max(1, bh // 5)),
+        (max(1, bw // factor), max(1, bh // factor)),
         interpolation=cv2.INTER_LINEAR,
     )
     blurred = cv2.resize(tiny, (bw, bh), interpolation=cv2.INTER_LINEAR)

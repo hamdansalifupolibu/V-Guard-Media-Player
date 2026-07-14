@@ -17,7 +17,7 @@ from dataclasses import dataclass
 # Slider endpoints (strictness percent → NSFW probability cutoff)
 THRESHOLD_AT_LENIENT = 0.65
 THRESHOLD_AT_STRICT = 0.26
-DEFAULT_STRICTNESS_PERCENT = 82
+DEFAULT_STRICTNESS_PERCENT = 88
 
 
 @dataclass(frozen=True)
